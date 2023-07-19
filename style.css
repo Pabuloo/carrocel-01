@@ -43,14 +43,14 @@ body {
     right: -23px;
 }
 
-.wrapper .carroucel {
+.wrapper .carrousel {
     font-size: 0px;
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.carroucel img {
+.carrousel img {
     height: 340px;
     object-fit: cover;
     margin-left: 14px;
@@ -58,13 +58,13 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .carroucel img {
+    .carrousel img {
         width: calc(100% / 2);
     }
 }
 
 @media screen and (max-width: 550px) {
-    .carroucel img {
+    .carrousel img {
         width: calc(100% / 2);
     }
 }
