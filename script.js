@@ -1,6 +1,18 @@
 const carroucel = document.querySelector(".carroucel");
+firsImg = carroucel.querySelectorAll("img")[0];
+arrowIcons = document.querySelectorAll(".wrapper i");
 
 let isDragStart = false, prevPageX, preveScrollLeft;
+let firsImgWidth = firsImg.clientWidth + 14; // getting first img width & adding 14 margin value
+
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        // if clicked icon is left, reduce width value from the carrocel scroll left else add to it
+        carroucel.scrollLeft += icon.id == "left" ? -firsImgWidth : firsImgWidth;
+    });
+});
+
+
 
 const dragStart = (e) => {
     // update global variables value on mouse down event
